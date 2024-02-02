@@ -1,0 +1,48 @@
+body{
+    background-color: darkgray;
+}
+.container1{
+   width: 400px;
+   height: 400px;
+   background-color: aqua;
+   margin: 100px auto; 
+   animation-name: abc;
+   animation-duration: 5s;
+   animation-timing-function:linear;
+}
+@keyframes abc{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+.container2{
+    width: 400px;
+    height: 400px;
+    background-color: greenyellow;
+  
+    animation-name: abc2;
+    animation-duration: 5s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+ }
+ @keyframes abc2{
+     0%{
+        
+         transform: translate(0%);
+     }
+     25%{
+        background-color: blueviolet;
+     }
+     50%{
+        background-color: color-mix(in hsl shorter hue, color percentage, color percentage);
+     }
+     100%{
+         transform: translate(1000px);
+     }
+ }
+ 
